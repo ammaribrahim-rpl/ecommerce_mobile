@@ -1,5 +1,5 @@
-import 'package:ecommerce_mobile/screens/onboarding/on_boarding1.dart';
-import 'package:ecommerce_mobile/screens/splash/splash_screen.dart';
+import 'package:ecommerce_mobile/features/onboarding/on_boarding1.dart';
+import 'package:ecommerce_mobile/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

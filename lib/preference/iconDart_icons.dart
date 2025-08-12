@@ -17,4 +17,5 @@ class IconDart {
   static const IconData filtericon = IconData(0xe901, fontFamily: _fontFamily,);
   static const IconData searchicon = IconData(0xe903, fontFamily: _fontFamily);
   static const IconData heart = IconData(0xe9da, fontFamily: _fontFamily);
+  static const IconData plus = IconData(0xe900, fontFamily: _fontFamily);
 }

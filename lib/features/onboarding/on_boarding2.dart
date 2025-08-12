@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile/screens/home/home_screen.dart';
+import 'package:ecommerce_mobile/features/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SecOnBoarding extends StatefulWidget {

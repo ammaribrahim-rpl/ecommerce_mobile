@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile/screens/onboarding/on_boarding2.dart';
+import 'package:ecommerce_mobile/features/onboarding/on_boarding2.dart';
 import 'package:flutter/material.dart';
 
 class FirstOnBoarding extends StatelessWidget {
