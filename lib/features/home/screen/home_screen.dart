@@ -125,7 +125,15 @@ class HomeScreen extends StatelessWidget {
                 ),
                 FoodItem(
                   item: ItemFoodModel(
-                    imagepath: "assets/image/food_bottom2.png",
+                    imagepath: "assets/image/food_bottom1.png",
+                    name: "Tropical fruit salad",
+                    price: "Rp 10.000",
+                    bgColor: Color(0xffFEF0F0),
+                  ),
+                ),
+                FoodItem(
+                  item: ItemFoodModel(
+                    imagepath: "assets/image/food_bottom1.png",
                     name: "Tropical fruit salad",
                     price: "Rp 10.000",
                     bgColor: Color(0xffFEF0F0),

@@ -73,14 +73,6 @@ class DetailScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'Rp. 25.000',
-                        style: TextStyle(
-                          color: Color(0xffFFA451),
-                          fontSize: 24,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
                       Container(
                         padding: EdgeInsets.all(2),
                         decoration: BoxDecoration(
@@ -162,9 +154,14 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 60),
-                      Expanded(child: ElevatedButton(onPressed: (){}, child: Text('Add to Cart'))),
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text('Add to Cart'),
+                        ),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
