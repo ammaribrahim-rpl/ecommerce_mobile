@@ -1,5 +1,5 @@
+import 'package:ecommerce_mobile/features/onboarding/on_boarding1.dart';
 import 'package:flutter/material.dart';
-import '../onboarding/on_boarding1.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -11,22 +11,20 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // Simulate a delay for splash screen
-    Future.delayed(const Duration(seconds: 3), () {
-      // Navigate to the OnBoarding screen after the delay
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => FirstOnBoarding()),
         (route) => false,
       );
-      super.initState();
     });
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Image.asset('assets/image/splash.png')),
+      body: Center(child: Image.asset('assets/images/splash.png')),
     );
   }
 }

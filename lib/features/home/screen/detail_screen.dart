@@ -1,4 +1,3 @@
-import 'package:ecommerce_mobile/preference/iconDart_icons.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {

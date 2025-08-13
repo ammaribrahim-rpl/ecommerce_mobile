@@ -1,6 +1,6 @@
 import 'package:ecommerce_mobile/features/home/model/item_model.dart';
 import 'package:ecommerce_mobile/features/home/widgets/item_combo.dart';
-import 'package:ecommerce_mobile/preference/iconDart_icons.dart';
+import 'package:ecommerce_mobile/preferences/iconDart_icons.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(Icons.menu, size: 14),
+              Icon(IconDart.filtericon, size: 14),
               Column(
                 children: [
                   Icon(IconDart.cart, color: Color(0xffFFA451)),
