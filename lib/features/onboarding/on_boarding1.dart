@@ -1,4 +1,6 @@
 import 'package:ecommerce_mobile/features/onboarding/on_boarding2.dart';
+import 'package:ecommerce_mobile/preferences/assets.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
 
 class FirstOnBoarding extends StatelessWidget {
@@ -13,11 +15,11 @@ class FirstOnBoarding extends StatelessWidget {
             flex: 65,
             child: Container(
               decoration: BoxDecoration(
-                color: const Color(0xffFFA451),
+                color: MainColors.primaryColor,
                 image: DecorationImage(
-                  image: AssetImage('assets/image/onboarding1.png'),
-                  alignment: Alignment(0, 0.6),
-                  scale: 1.05,
+                  image: AssetImage(MainAssets.firstOnBoarding),
+                  alignment: Alignment(0, 1),
+                  scale: 0.1,
                 ),
               ),
             ),
@@ -26,7 +28,7 @@ class FirstOnBoarding extends StatelessWidget {
             flex: 35,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-              decoration: BoxDecoration(color: Color(0xffffffff)),
+              decoration: BoxDecoration(color: MainColors.whiteColor),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -35,7 +37,7 @@ class FirstOnBoarding extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      color: Colors.black,
+                      color: MainColors.blackColor,
                     ),
                   ),
                   SizedBox(height: 8),
@@ -44,7 +46,7 @@ class FirstOnBoarding extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
-                      color: Color(0xff5D577E),
+                      color: MainColors.primaryColor[600],
                     ),
                   ),
                   SizedBox(height: 34),

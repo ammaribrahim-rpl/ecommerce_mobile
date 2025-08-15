@@ -1,4 +1,5 @@
 import 'package:ecommerce_mobile/features/onboarding/on_boarding1.dart';
+import 'package:ecommerce_mobile/preferences/assets.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -23,8 +24,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Image.asset('assets/images/splash.png')),
-    );
+    return Scaffold(body: Center(child: Image.asset(MainAssets.splash)));
   }
 }

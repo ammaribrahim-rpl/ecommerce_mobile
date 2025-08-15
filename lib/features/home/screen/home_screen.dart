@@ -1,5 +1,7 @@
 import 'package:ecommerce_mobile/features/home/model/item_model.dart';
 import 'package:ecommerce_mobile/features/home/widgets/item_combo.dart';
+import 'package:ecommerce_mobile/preferences/assets.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:ecommerce_mobile/preferences/iconDart_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +24,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+        padding: EdgeInsets.symmetric(vertical: 60, horizontal: 20),
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,7 +32,7 @@ class HomeScreen extends StatelessWidget {
               Icon(IconDart.filtericon, size: 14),
               Column(
                 children: [
-                  Icon(IconDart.cart, color: Color(0xffFFA451)),
+                  Icon(IconDart.cart, color: MainColors.primaryColor[600]),
                   Text("My basket", style: TextStyle(fontSize: 10)),
                 ],
               ),
@@ -54,7 +56,7 @@ class HomeScreen extends StatelessWidget {
               ),
               SizedBox(width: 10),
               IconButton(
-                icon: Icon(IconDart.filterr, color: Color(0xff000000)),
+                icon: Icon(IconDart.filterr, color: MainColors.blackColor),
                 onPressed: () {},
               ),
             ],
@@ -73,16 +75,18 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   FoodItem(
                     item: ItemFoodModel(
-                      imagepath: "assets/image/food1.png",
-                      name: "Honey lime combo",
-                      price: "Rp 2.000",
+                      imagepath: MainAssets.food1,
+                      name: "Pearl Milk Tea",
+                      price: "Rp 25.000",
+                      bgColor: MainColors.VioletColor[200],
                     ),
                   ),
                   FoodItem(
                     item: ItemFoodModel(
-                      imagepath: "assets/image/food2.png",
+                      imagepath: MainAssets.food3,
                       name: "Berry mango combo",
                       price: "Rp 8.000",
+                      bgColor: MainColors.VioletColor[400],
                     ),
                   ),
                 ],
@@ -117,26 +121,26 @@ class HomeScreen extends StatelessWidget {
               children: [
                 FoodItem(
                   item: ItemFoodModel(
-                    imagepath: "assets/image/food_bottom1.png",
+                    imagepath: MainAssets.food_1,
                     name: "Quinoa fruit salad",
                     price: "Rp 10.000",
-                    bgColor: Color(0xffFFFAEB),
+                    bgColor: MainColors.VioletColor[200],
                   ),
                 ),
                 FoodItem(
                   item: ItemFoodModel(
-                    imagepath: "assets/image/food_bottom1.png",
+                    imagepath: MainAssets.food_2,
                     name: "Tropical fruit salad",
                     price: "Rp 10.000",
-                    bgColor: Color(0xffFEF0F0),
+                    bgColor: MainColors.VioletColor[400],
                   ),
                 ),
                 FoodItem(
                   item: ItemFoodModel(
-                    imagepath: "assets/image/food_bottom1.png",
+                    imagepath: MainAssets.food_3,
                     name: "Tropical fruit salad",
                     price: "Rp 10.000",
-                    bgColor: Color(0xffFEF0F0),
+                    bgColor: MainColors.VioletColor[200],
                   ),
                 ),
               ],

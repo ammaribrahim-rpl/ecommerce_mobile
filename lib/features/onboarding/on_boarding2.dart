@@ -1,4 +1,6 @@
 import 'package:ecommerce_mobile/features/home/screen/home_screen.dart';
+import 'package:ecommerce_mobile/preferences/assets.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
 
 class SecOnBoarding extends StatefulWidget {
@@ -20,11 +22,11 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
             flex: 65,
             child: Container(
               decoration: BoxDecoration(
-                color: const Color(0xffFFA451),
+                color: MainColors.primaryColor,
                 image: DecorationImage(
-                  image: AssetImage('assets/image/onboarding2.png'),
-                  alignment: Alignment(0, 0.6),
-                  scale: 1.05,
+                  image: AssetImage(MainAssets.secOnBoarding),
+                  alignment: Alignment(0, 1),
+                  scale: 1,
                 ),
               ),
             ),
@@ -33,7 +35,7 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
             flex: 35,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-              decoration: BoxDecoration(color: Color(0xffffffff)),
+              decoration: BoxDecoration(color: MainColors.whiteColor),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -45,7 +47,7 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                          color: MainColors.blackColor,
                         ),
                       ),
                     ],

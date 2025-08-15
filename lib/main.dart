@@ -1,4 +1,6 @@
 import 'package:ecommerce_mobile/features/onboarding/on_boarding1.dart';
+import 'package:ecommerce_mobile/features/splash/splash_screen.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,8 +22,8 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.symmetric(vertical: 14),
-            backgroundColor: Color(0xffFFA451),
-            foregroundColor: Color(0xffffffff),
+            backgroundColor: MainColors.VioletColor[600],
+            foregroundColor: MainColors.whiteColor[400],
             textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
@@ -29,12 +31,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
         inputDecorationTheme: InputDecorationTheme(
-          fillColor: Color(0xffF3F1F1),
+          fillColor: MainColors.whiteColor[400],
           filled: true,
           hintStyle: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w400,
-            color: Color(0xffC2BDBD),
+            color: MainColors.blackColor[200],
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const FirstOnBoarding(),
+      home: const SplashScreen(),
     );
   }
 }

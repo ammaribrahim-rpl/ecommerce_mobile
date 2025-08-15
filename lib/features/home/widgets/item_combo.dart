@@ -1,5 +1,6 @@
 import 'package:ecommerce_mobile/features/home/model/item_model.dart';
 import 'package:ecommerce_mobile/features/home/screen/detail_screen.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
 
 class FoodItem extends StatefulWidget {
@@ -17,15 +18,15 @@ class _FoodItemState extends State<FoodItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 152,
-      height: 183,
+      width: 155,
+      height: 210,
       margin: EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
-        color: widget.item.bgColor ?? Color(0xffFFFFFF),
+        color: widget.item.bgColor ?? MainColors.primaryColor,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Color(0xff202020).withOpacity(0.05),
+            color: MainColors.blackColor.withOpacity(0.05),
             spreadRadius: 0,
             blurRadius: 6,
             offset: Offset(0, 3),
@@ -41,11 +42,9 @@ class _FoodItemState extends State<FoodItem> {
               InkWell(
                 onTap: () {
                   Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => DetailScreen()
-                      ), 
-                        );
+                    context,
+                    MaterialPageRoute(builder: (context) => DetailScreen()),
+                  );
                 },
                 child: Image.asset(widget.item.imagepath, width: 90),
               ),
@@ -63,16 +62,20 @@ class _FoodItemState extends State<FoodItem> {
                 children: [
                   Text(
                     widget.item.price,
-                    style: TextStyle(color: Color(0xffFFA451)),
+                    style: TextStyle(color: MainColors.primaryColor[800]),
                   ),
                   SizedBox(width: 36),
                   Container(
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
-                      color: Color(0xffFFF2E7),
+                      color: MainColors.whiteColor,
                     ),
-                    child: Icon(Icons.add, color: Color(0xffFFA451), size: 12),
+                    child: Icon(
+                      Icons.add,
+                      color: MainColors.primaryColor[600],
+                      size: 12,
+                    ),
                   ),
                 ],
               ),
@@ -89,7 +92,7 @@ class _FoodItemState extends State<FoodItem> {
               child: Icon(
                 isFavorite ? Icons.favorite : Icons.favorite_border_rounded,
                 size: 23,
-                color: Color(0xffFFA451),
+                color: MainColors.primaryColor[600],
               ),
             ),
           ),
