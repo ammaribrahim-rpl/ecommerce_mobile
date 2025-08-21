@@ -1,4 +1,3 @@
-import 'package:ecommerce_mobile/features/onboarding/on_boarding1.dart';
 import 'package:ecommerce_mobile/features/splash/splash_screen.dart';
 import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +40,23 @@ class MyApp extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide.none,
+          ),
+        ),
+        appBarTheme: AppBarTheme(
+          backgroundColor: MainColors.primaryColor,
+          centerTitle: true,
+          toolbarHeight: 100,
+          surfaceTintColor: MainColors.primaryColor,
+          leadingWidth: 150,
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            side: BorderSide(color: MainColors.primaryColor),
+            padding: EdgeInsets.symmetric(vertical: 14),
+            foregroundColor: MainColors.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
           ),
         ),
       ),

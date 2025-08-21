@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile/features/home/screen/home_screen.dart';
+import 'package:ecommerce_mobile/features/home/screen/home_screen/home_screen.dart';
 import 'package:ecommerce_mobile/preferences/assets.dart';
 import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
