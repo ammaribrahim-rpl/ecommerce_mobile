@@ -1,5 +1,7 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:ecommerce_mobile/features/cart/cart_screen.dart';
 import 'package:ecommerce_mobile/features/home/screen/home_screen/home_screen.dart';
+import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:ecommerce_mobile/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -23,23 +25,21 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screens[selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: selectedIndex,
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: MainColors.whiteColor,
+        index: selectedIndex,
+        color: MainColors.primaryColor,
         onTap: (index) {
           setState(() {
             selectedIndex = index;
             // bisa menambahkan type atau fungsi lain di sini jika diperlukan
           });
         },
-        type: BottomNavigationBarType.fixed,
         // type: BottomNavigationBarType.shifting, jika ingin menggunakan shifting (lebih interaktif)
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorites',
-          ),
+          Icon(Icons.home, color: MainColors.whiteColor),
+          Icon(Icons.person, color: MainColors.whiteColor),
+          Icon(Icons.favorite, color: MainColors.whiteColor),
         ],
       ),
     );
