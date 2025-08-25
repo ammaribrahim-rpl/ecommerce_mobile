@@ -1,4 +1,4 @@
-import 'package:ecommerce_mobile/features/home/screen/home_screen/home_screen.dart';
+import 'package:ecommerce_mobile/features/home/screen/main_screen/main_screen.dart';
 import 'package:ecommerce_mobile/preferences/assets.dart';
 import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
@@ -62,11 +62,11 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
                   SizedBox(height: 34),
                   ElevatedButton(
                     onPressed: () {
-                      String name = _nameController.text;
+                      String nameController = _nameController.text;
                       Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen(name: name),
+                          builder: (context) => MainScreen(name: nameController),
                         ),
                         (Route) => false,
                       );
